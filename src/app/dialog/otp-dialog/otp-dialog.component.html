@@ -1,0 +1,15 @@
+<div mat-dialog-content>
+    <p>Enter the OTP Sent to your registered Email Id</p>
+    <div>
+        <ngx-otp-input  #ngxotp 
+        [config]="otpConfig" 
+        (otpChange)="handleOtpChange($event)" 
+        (fill)="onOtpFilled($event)">
+        </ngx-otp-input>
+    </div>
+</div>
+<div mat-dialog-actions>
+    <button (click)="clear()" mat-raised-button color="secondary">
+        Resend OTP
+    </button>
+</div>

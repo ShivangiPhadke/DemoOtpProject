@@ -1,0 +1,21 @@
+:host::ng-deep .div-cls {
+    text-align: center;
+
+    mat-form-field {
+        width: 23rem;
+    }
+
+    .mat-mdc-card-header {
+        display: block;
+        padding: 16px 16px 0;
+    }
+
+    .btn-cls {
+        span {
+            button {
+                margin: 10px;
+                padding: 0 27px;
+            }
+        }
+    }
+}

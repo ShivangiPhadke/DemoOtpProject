@@ -1,0 +1,173 @@
+{
+  "user": [
+    {
+      "id": "admin.hr@dso.org.sg",
+      "name": "Admin",
+      "password": "Test$1234",
+      "email": "admin.hr@dso.org.sg",
+      "gender": "male",
+      "role": "admin",
+      "isactive": true,
+      "address": {
+        "area": "Singapore"
+      },
+      "otpKeys": {
+        "otp": "012134",
+        "status": "success"
+      }
+    },
+    {
+      "id": "tester1@dso.org.sg",
+      "name": "Test User1",
+      "password": "Test@1234",
+      "email": "tester1@dso.org.sg",
+      "gender": "male",
+      "role": "user",
+      "isactive": true,
+      "address": {
+        "area": "India"
+      }
+    },
+    {
+      "id": "Hr@dso.org.sg",
+      "name": "Test User2",
+      "password": "Test@1233",
+      "email": "Hr@dso.org.sg",
+      "gender": "male",
+      "role": "tech",
+      "isactive": true,
+      "address": {
+        "area": "Dubai"
+      },
+      "otpKeys": {
+        "otp": "043256",
+        "status": "success"
+      }
+    },
+    {
+      "id": "Jon.it@dso.org.sg",
+      "name": "Admin2",
+      "password": "Test@1234",
+      "email": "Jon.it@dso.org.sg",
+      "gender": "male",
+      "role": "user",
+      "isactive": true,
+      "otpKeys": {
+        "otp": "012134",
+        "status": "success"
+      }
+    },
+    {
+      "id": "tester1@proc.dso.org.sg",
+      "name": "testAbc1",
+      "password": "Test@1234",
+      "email": "tester1@proc.dso.org.sg",
+      "gender": "male",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "tester2@yahoo.com",
+      "name": "testPqr1",
+      "password": "Test@1234",
+      "email": "tester2@yahoo.com",
+      "gender": "male",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "tester2@a.dso.org.sg.yahoo.com",
+      "name": "AdminAbc1",
+      "password": "Test@1234",
+      "email": "tester2@a.dso.org.sg.yahoo.com",
+      "gender": "male",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "123@it.dso.org",
+      "name": "AdminPqr1",
+      "password": "Test@1234",
+      "email": "123@it.dso.org",
+      "gender": "male",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "123@12@dso.com",
+      "name": "test user3",
+      "password": "Test@1234",
+      "email": "123@12@dso.com",
+      "gender": "male",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "Shivangi@gmail.com",
+      "name": "Shivangi",
+      "password": "Shivangi@12344",
+      "email": "Shivangi@gmail.com",
+      "gender": "male",
+      "role": "",
+      "isactive": false
+    },
+    {
+      "password": "Shivangi@12344",
+      "id": "Shivangi@dso.org.sg",
+      "name": "Shivangi",
+      "gender": "female",
+      "role": "",
+      "isactive": false
+    }
+  ],
+  "role": [
+    {
+      "code": "user",
+      "name": "User"
+    },
+    {
+      "code": "tech",
+      "name": "Technician"
+    }
+  ],
+  "menu": [
+    {
+      "code": "user",
+      "name": "User"
+    },
+    {
+      "code": "customer",
+      "name": "Customer"
+    }
+  ],
+  "roleaccess": [
+    {
+      "role": "admin",
+      "menu": "user",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true
+    },
+    {
+      "role": "admin",
+      "menu": "customer",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": true
+    },
+    {
+      "role": "user",
+      "menu": "user",
+      "haveedit": false,
+      "haveadd": false,
+      "havedelete": false
+    },
+    {
+      "role": "user",
+      "menu": "customer",
+      "haveedit": true,
+      "haveadd": true,
+      "havedelete": false
+    }
+  ]
+}

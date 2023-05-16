@@ -1,0 +1,52 @@
+<div class="row">
+
+  <mat-card>
+    <div class="div-cls">
+      <mat-card-header>
+        <h2>User Login</h2>
+      </mat-card-header>
+      <div class="header-cls">
+        <mat-card-content>
+          <div class="col-10">
+            <form class="example-form" [formGroup]="loginform">
+              <div>
+                <mat-form-field class="example-full-width">
+                  <mat-label>Username</mat-label>
+                  <input matInput formControlName="id">
+                </mat-form-field>
+              </div>
+              <div>
+                <mat-form-field class="example-full-width">
+                  <mat-label>Password</mat-label>
+                  <input matInput type="password" formControlName="password">
+                </mat-form-field>
+              </div>
+
+              <div class="btn-cls">
+                <span><button mat-raised-button color="primary" (click)="proceedlogin()">Login</button></span>
+                <span><a routerLink="/signup" mat-raised-button color="accent">New User?</a></span>
+              </div>
+            </form>
+          </div>
+        </mat-card-content>
+      </div>
+    </div>
+  </mat-card>
+</div>
+
+<!-- <div>
+<ol>
+  <li>
+    <mat-form-field appearance="fill">
+      <mat-label>What's your name?</mat-label>
+      <input matInput [(ngModel)]="name">
+    </mat-form-field>
+  </li>
+  <li>
+    <button mat-raised-button (click)="openDialog()">Pick one</button>
+  </li>
+  <li *ngIf="animal">
+    You chose: <i>{{animal}}</i>
+  </li>
+</ol>
+</div> -->
